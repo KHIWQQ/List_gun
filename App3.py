@@ -178,21 +178,41 @@ class Ui_MainWindow(object):
         nogun = self.lineEdit.text()
         print(nogun)
         update_pickup(nogun)
+        self.lineEdit_5.setPlaceholderText(get_data())
+        self.lineEdit_6.setPlaceholderText(get_pickup())
+        self.lineEdit_7.setPlaceholderText(get_broken())
+        self.lineEdit_8.setPlaceholderText(get_lost())
+        self.lineEdit_9.setPlaceholderText(get_remaining())
         
     def broken(self):
         nogun = self.lineEdit_3.text()
         print(nogun)
         update_broken(nogun)
+        self.lineEdit_5.setPlaceholderText(get_data())
+        self.lineEdit_6.setPlaceholderText(get_pickup())
+        self.lineEdit_7.setPlaceholderText(get_broken())
+        self.lineEdit_8.setPlaceholderText(get_lost())
+        self.lineEdit_9.setPlaceholderText(get_remaining())
         
     def lost(self):
         nogun = self.lineEdit_4.text()
         print(nogun)
         update_lost(nogun)
+        self.lineEdit_5.setPlaceholderText(get_data())
+        self.lineEdit_6.setPlaceholderText(get_pickup())
+        self.lineEdit_7.setPlaceholderText(get_broken())
+        self.lineEdit_8.setPlaceholderText(get_lost())
+        self.lineEdit_9.setPlaceholderText(get_remaining())
         
     def remaining(self):
         nogun = self.lineEdit_2.text()
         print(nogun)
-        update_remaining(nogun)        
+        update_remaining(nogun)
+        self.lineEdit_5.setPlaceholderText(get_data())
+        self.lineEdit_6.setPlaceholderText(get_pickup())
+        self.lineEdit_7.setPlaceholderText(get_broken())
+        self.lineEdit_8.setPlaceholderText(get_lost())
+        self.lineEdit_9.setPlaceholderText(get_remaining())        
   
 # DATABASE
 import mysql.connector
